@@ -5,7 +5,9 @@ const links = [
     { name: "alert", href: "alert" },
     { name: "button ", href: "button" },
     { name: "dialog", href: "dialog" },
-];
+    { name: "badge", href: "badge" },
+    { name: "calendar", href: "calendar" },
+].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({
     children,
@@ -52,7 +54,7 @@ export default function DashboardLayout({
                                 </svg>
                             </button>
                             <a
-                                href="#"
+                                href="home"
                                 className="text-xl font-bold flex items-center lg:ml-2.5"
                             >
                                 {/* Logo */}
@@ -86,7 +88,7 @@ export default function DashboardLayout({
                                     ></line>
                                 </svg>
                                 <span className="self-center whitespace-nowrap ml-2">
-                                    {" "}
+                                    {""}
                                     Shadcn/ui
                                 </span>
                             </a>
